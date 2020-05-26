@@ -18,4 +18,4 @@ def text_search():
     for l in titles_raw:
         m = ''.join(l)
         links.append(m)
-    return render_template('test.html', title = 'Rezultate', links = links, w = w)
+    return render_template('search.html', title = 'Rezultate', links = links, w = w)

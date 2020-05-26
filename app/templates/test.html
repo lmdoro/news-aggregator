@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <div class="mx-auto" style="width: 200px;">
+        <h1><a href="{{ url_for('home') }}"> Înapoi </a></h1>
+    </div>
+    <div class="col-sm"></div>
+    <div class="row">
+
+        <br>
+        <h2 class="title">Rezultate pentru "{{ w }}"</h1>
+            {% for link in links %}
+            <h5 class="title"><a href="{{ link }}" target="_blank">{{ link }}</a></h5>
+            {% endfor %}
+    </div>
+</div>
+</div>
+{% endblock %}

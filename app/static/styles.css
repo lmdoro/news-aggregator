@@ -1,0 +1,17 @@
+body{
+    background-color: #e6f0ed;
+}
+
+a{
+    color: brown;
+}
+a:hover{
+    color: black;
+}
+
+.container{
+    background-color:#d5ded7;
+    padding: 40px 100px 40px 100px;
+    justify-content: center;
+    border-radius: 20px;
+}

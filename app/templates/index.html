@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+    {% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <h1 class="title">Hotnews</h1>
+                {% for article in context.hotnews %}
+                <h5 class="title"><a href="{{ article.link }}" target="_blank">{{ article.title }}</a></h5>
+                {% endfor %}
+            </div>
+            <div class="col-sm">
+                <h1 class="title">Mediafax</h1>
+                {% for article in context.mediafax %}
+                <h5 class="title"><a href="{{ article.link }}" target="_blank">{{ article.title }}</a></h5>
+                {% endfor %}
+            </div>
+            <div class="col-sm">
+                <h1 class="title">Digi24</h1>
+                {% for article in context.digi %}
+                <h5 class="title"><a href="{{ article.link }}" target="_blank">{{ article.title }}</a></h5>
+                {% endfor %}
+            </div>
+            <div class="col-sm">
+                <h1 class="title">G4Media</h1>
+                {% for article in context.g4media %}
+                <h5 class="title"><a href="{{ article.link }}" target="_blank">{{ article.title }}</a></h5>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+

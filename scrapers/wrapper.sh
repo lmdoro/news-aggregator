@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-export DB_PATH="/home/doro/projects/flask/news-aggregator/scraper.db"
+export DB_PATH="$HOME/projects/flask/news-aggregator/scraper.db"
 
 $HOME/projects/flask/news-aggregator/scrapers/hotnews.py
 $HOME/projects/flask/news-aggregator/scrapers/mediafax.py

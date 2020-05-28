@@ -4,7 +4,6 @@ import requests
 import sqlite3
 import os
 
-t = os.environ.get('TEST_VAR')
 print(t)
 # Hotnews
 hotnews_source = requests.get('https://www.hotnews.ro/').text
